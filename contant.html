@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>山海经</title>
+	<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="head">
+	<div class="logo"><img src="images/logo.png" width="280" /></div>
+	<div class="nav">
+		<ul>
+			<li class="navli">
+				<a href="index.html" >首页</a>
+			</li>
+			<li><a href="Type.html" >研究对象</a></li>
+      		<li><a href="Intro.html" >发展前景</a></li>
+      		<li><a href="Characteristic.html" >研究领域</a></li>
+      		<li><a href="Curing.html">主干课程</a></li>
+			<li><a href="wenhua.html">学科性质</a></li>
+			<li><a href="news.html">新闻</a></li>
+			<li><a href="contant.html" class="active">联系我</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+  	<img src="images/img011.png" />
+</div>
+<div id="main">
+	<div id="main_r">
+		<div id="galaxy">
+			<h2 class="title">创始</h2>
+			<ul>
+                <li><a href="Intro.html#a">起源与演变</a></li>
+                <li><a href="Intro.html#b">历史与传承</a></li>
+                <li><a href="Intro.html#c">种类与特征</a></li>
+                <li><a href="Intro.html#d">展望与未来</a></li>
+            </ul>
+		</div>
+	</div>
+	<div id="main_l">
+		<h2 class="title">联系我</h2>
+		<div class="content">
+			<div class="cont_w" style=" color:#000; line-height:24px; ">
+				<div>地址：
+					<input type="text" name="textfield" id="textfield" />
+					<p><br /></p>  
+					
+				</div>
+            	<div>电话：
+					<input type="text" name="textfield3" id="textfield3" />
+					<p><br /></p>
+				</div>
+            	<div>姓名：
+            	    <input type="text" name="textfield2" id="textfield2" />
+          	        <p><br /></p>
+				</div>
+            	<div>邮箱：
+                    <input type="text" name="textfield6" id="textfield6" />
+          	        <p>  <br /></p>
+				</div>
+                <p>　　　　　　　　
+          	        <input type="submit" name="button" id="button" value="提交" />
+          	    </p>
+          	</div>
+    </div></div></div> 
+</div>
+<div class="bottom">Copyright © 山海经</div>
+</body>
+<script type="text/javascript" src="js/dh.js"></script>
+<script>
+	document.getElementById("textfield").onfocus=function(){
+        document.getElementsByTagName("p").item(0).innerHTML="支持中文数字"
+        }
+        document.getElementById("textfield").onblur=function(){
+            if(document.getElementById("textfield").value==""){
+                document.getElementsByTagName("p").item(0).innerHTML="地址不能为空"
+            }
+        }
+
+	document.getElementById("textfield3").onfocus=function(){
+	    document.getElementsByTagName("p").item(1).innerHTML="建议使用数字"
+    }
+    
+    document.getElementById("textfield3").onblur=function(){
+        if(document.getElementById("textfield3").value==""){
+            document.getElementsByTagName("p").item(1).innerHTML="电话不能为空"
+	    }
+    }
+
+	document.getElementById("textfield2").onfocus=function(){
+	    document.getElementsByTagName("p").item(2).innerHTML="中英文均可"
+    }
+    
+    document.getElementById("textfield2").onblur=function(){
+        if(document.getElementById("textfield2").value==""){
+            document.getElementsByTagName("p").item(2).innerHTML="姓名不能为空"
+	    }
+    }
+
+	document.getElementById("textfield6").onfocus=function(){
+	    document.getElementsByTagName("p").item(3).innerHTML="请输入正确的邮箱格式"
+    }
+    
+    document.getElementById("textfield6").onblur=function(){
+        if(document.getElementById("textfield6").value==""){
+            document.getElementsByTagName("p").item(3).innerHTML="邮箱不能为空"
+	    }
+    }
+
+	document.getElementById("button").onclick=function(){
+		alert("填写成功！");
+    }
+</script>
+</html>
